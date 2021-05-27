@@ -5,13 +5,14 @@ In this notebook, you'll implement a recurrent neural network that performs sent
 
 Here we'll use a dataset of movie reviews, accompanied by sentiment labels: positive or negative.
 
+![image](https://user-images.githubusercontent.com/38142069/119849945-fcfac780-bf04-11eb-9a3d-f696757be719.png)
 
 
 ### Network Architecture
 
 The architecture for this network is shown below.
 
-<img src="assets/network_diagram.png" width=40%>
+![image](https://user-images.githubusercontent.com/38142069/119849996-08e68980-bf05-11eb-8cef-713ccaf57965.png)
 
 >**First, we'll pass in words to an embedding layer.** We need an embedding layer because we have tens of thousands of words, so we'll need a more efficient representation for our input data than one-hot encoded vectors. You should have seen this before from the Word2Vec lesson. You can actually train an embedding with the Skip-gram Word2Vec model and use those embeddings as input, here. However, it's good enough to just have an embedding layer and let the network learn a different embedding table on its own. *In this case, the embedding layer is for dimensionality reduction, rather than for learning semantic representations.*
 
